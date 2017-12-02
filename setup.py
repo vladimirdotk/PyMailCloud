@@ -15,7 +15,7 @@ setup(
     version  = __version__,
     packages = find_packages(),
 
-    install_requires = ['python (>= 3.4)', 'requests', 'requests-toolbelt', 'tqdm'],
+    install_requires = ['requests', 'requests-toolbelt', 'tqdm'],
 
     # in case you want to use slugify() with support for transliteration:
     description  = 'Unofficial python library for making API requests to [Cloud@Mail.ru](http://cloud.mail.ru/)',

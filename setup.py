@@ -3,7 +3,7 @@
 
 import io
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from _version_helper import __version__
 
@@ -13,7 +13,7 @@ readme = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 setup(
     name     = 'pymailcloud',
     version  = __version__,
-    packages = ['pymailcloud'],
+    packages = find_packages(),
 
     requires = ['python (>= 3.4)', 'requests', 'requests_toolbelt', 'tqdm'],
     # in case you want to use slugify() with support for transliteration:

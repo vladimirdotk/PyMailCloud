@@ -5,14 +5,12 @@ import io
 import os
 from setuptools import setup, find_packages
 
-from _version_helper import __version__
-
 
 readme = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 setup(
     name     = 'pymailcloud',
-    version  = __version__,
+    version  = '0.1',
     packages = find_packages(),
 
     install_requires = ['requests', 'requests-toolbelt', 'tqdm'],
